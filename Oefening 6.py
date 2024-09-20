@@ -20,14 +20,10 @@ def drop():
 move(7)
 pos_right = 1
 pos_left = -2
-x = 8
-while x != 0:
+for _ in range(8):
     grab()
     move(pos_right)
-    pos_right += 1
     drop()
     move(pos_left)
-    pos_left -= 1
-    x -= 1
 
 robotArm.wait()

@@ -17,21 +17,17 @@ def grab():
 def drop():
     robotArm.drop()
 
-x = 3
-while x != 0:
+for _ in range(3):
     grab()
     move(2)
     drop()
     move(-2)
-    x -= 1
 
-x = 3
 move(2)
-while x != 0:
+for _ in range(3):
     grab()
     move(-1)
     drop()
     move(1)
-    x -=1
 
 robotArm.wait()
