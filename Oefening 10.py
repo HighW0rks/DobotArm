@@ -23,4 +23,11 @@ for pos in range(5):
     drop()
     move(-5 + pos + 1)
 
+for pos in range(5):
+    grab()
+    move(-5 + pos)
+    drop()
+    move(5 - pos)
+
+
 robotArm.wait()
